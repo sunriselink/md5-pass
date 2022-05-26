@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
+  </head>
+
+  <body>
+    <div id="toast">Message</div>
+
+    <div class="container">
+      <div class="textbox">
+        <label for="public-key">Public key</label>
+        <input type="text" id="public-key" />
+      </div>
+
+      <div class="textbox">
+        <label for="private-key">Private key</label>
+        <input type="password" id="private-key" />
+      </div>
+
+      <div class="textbox">
+        <label for="substring">Substring</label>
+        <input type="text" id="substring" />
+      </div>
+
+      <p id="hash"></p>
+    </div>
+
+    <script src="error-handler.js"></script>
+    <script src="md5.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
