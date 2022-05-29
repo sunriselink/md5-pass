@@ -1,19 +1,19 @@
 /** @type{HTMLInputElement} */
-const publicKey$ = document.getElementById("public-key");
+const publicKey$ = document.getElementById('public-key');
 
 /** @type{HTMLInputElement} */
-const privateKey$ = document.getElementById("private-key");
+const privateKey$ = document.getElementById('private-key');
 
 /** @type{HTMLInputElement} */
-const substring$ = document.getElementById("substring");
+const substring$ = document.getElementById('substring');
 
 /** @type{HTMLElement} */
-const hash$ = document.getElementById("hash");
+const hash$ = document.getElementById('hash');
 
-publicKey$.addEventListener("input", createHash);
-privateKey$.addEventListener("input", createHash);
-substring$.addEventListener("input", createHash);
-hash$.addEventListener("click", copyHash);
+publicKey$.addEventListener('input', createHash);
+privateKey$.addEventListener('input', createHash);
+substring$.addEventListener('input', createHash);
+hash$.addEventListener('click', copyHash);
 
 function createHash() {
   const publicKey = publicKey$.value.trim();
@@ -34,14 +34,14 @@ function createHash() {
 }
 
 function copyHash() {
-  navigator.clipboard.writeText(hash$.innerHTML).then(() => toast("Copied"));
+  navigator.clipboard.writeText(hash$.innerHTML).then(() => toast('Copied'));
 }
 
 function toast(message) {
-  const element$ = document.getElementById("toast");
+  const element$ = document.getElementById('toast');
 
   element$.innerHTML = message;
-  element$.classList.add("show");
+  element$.classList.add('show');
 
-  setTimeout(() => element$.classList.remove("show"), 500);
+  setTimeout(() => element$.classList.remove('show'), 500);
 }

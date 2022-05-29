@@ -1,1 +1,1 @@
-window.onerror = (msg) => alert(msg);
+window.onerror = msg => alert(msg);
