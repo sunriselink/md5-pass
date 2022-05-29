@@ -16,6 +16,11 @@ p {
   margin: 0;
 }
 
+body {
+  min-width: 500px;
+  min-height: 500px;
+}
+
 #toast {
   opacity: 0;
   position: fixed;

@@ -1,0 +1,9 @@
+{
+  "name": "MD5 Pass",
+  "description": "Come on, don't linger",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  }
+}
